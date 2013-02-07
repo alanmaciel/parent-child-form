@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <b>Name:</b>
+  <%= @mom.name %>
+</h1>
+
+<h2>Kids</h2>
+<%= render @mom.kids %>
+
+<h3>Add kid</h3>
+<%= render 'kids/form' %>
+
+<%= link_to 'Edit', edit_mom_path(@mom) %> |
+<%= link_to 'Back', moms_path %>

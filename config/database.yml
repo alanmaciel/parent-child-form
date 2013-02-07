@@ -1,0 +1,14 @@
+development:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: parentchild_development
+
+test: &test
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: parentchild_test
+
+cucumber:
+  <<: *test
